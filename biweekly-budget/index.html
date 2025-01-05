@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biweekly Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Biweekly Budget Calculator</h1>
+
+    <!-- Income input -->
+    <label for="income">Enter your biweekly income:</label>
+    <input type="number" id="income" placeholder="Income" />
+
+    <!-- Expense section -->
+    <h3>Enter your expenses:</h3>
+    <label for="category">Expense Category:</label>
+    <input type="text" id="category" placeholder="e.g., Rent, Utilities" />
+
+    <label for="amount">Expense Amount:</label>
+    <input type="number" id="amount" placeholder="Amount" />
+
+    <button id="addExpenseBtn">Add Expense</button>
+    <button id="calculateBtn">Calculate Remaining</button>
+
+    <!-- List of added expenses -->
+    <h3>Expense List</h3>
+    <ul id="expenseList"></ul>
+
+    <!-- Display remaining balance -->
+    <div class="result" id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
